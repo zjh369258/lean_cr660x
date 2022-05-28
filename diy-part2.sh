@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.9.1/g' package/base-files/files/bin/config_generat
 sed -i 's/OpenWrt/CR6608/g' package/base-files/files/bin/config_generate
 
 #切换ramips内核到5.10
-sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
+#sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
 
 #设置WIFI
 sed -i 's/OpenWrt/CMCC-abd7/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
